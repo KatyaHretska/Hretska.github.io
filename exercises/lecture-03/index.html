@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lection 03</title>
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="/exercises/lecture-03/css/main.css" />
     <style type="text/css">
       p {
         color: red;
@@ -19,9 +19,14 @@
       body {
         background: var(--bgColor);
       }
-
+      /* колір лише для div, щоб у всього body був такий колір треба було, глобально змінну визначати, а не тільки для div, що входять у body */
       div {
         --bgColor: limegreen;
+      }
+
+      iframe {
+        width: 1440px;
+        height: 500px;
       }
     </style>
   </head>
@@ -36,7 +41,7 @@
     ></iframe>
     <!-- В елеиенті iframe визначте атрибут title зі значенням Сторінка Вікіпедії для мови CSS -->
     <p style="color: blue">This is my paragraph.</p>
-
+    <!-- буде синій за пріорітетністю -->
     <div>
       <p>Звичайний, нудний абзац. Намагайтеся не заснути.</p>
       <p class="exciting">
@@ -46,6 +51,7 @@
         The most exciting paragraph on the page. One of a kind!
       </p>
     </div>
+    <!-- не можна застосовувати два однакових id, тому змінила на class, ну і огорнула всю трійцю в div, здалося доречнішим, ніж робити div для лише одного речення -->
     <div>
       <h3>Div 1</h3>
       <p>Paragraph 1</p>
@@ -101,7 +107,7 @@
           <li><a href="#">Terms &amp; Conditions</a></li>
           <li><a href="#">Privacy Policy</a></li>
         </ul>
-        &copy; 2024 Copyright Shopaholic Inc.
+        <p>&copy; 2024 Copyright Shopaholic Inc.</p>
       </section>
     </footer>
   </body>
