@@ -1,5 +1,5 @@
 /* more styles */
-@import url("/css/my-imported-styles.css");
+@import url("my-imported-styles.css");
 
 /* місцями поміняла */
 * {
