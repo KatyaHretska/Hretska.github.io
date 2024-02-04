@@ -1,0 +1,18 @@
+/* more styles */
+@import url("/css/my-imported-styles.css");
+
+/* місцями поміняла */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    --primary-text-color: #000;
+    --primary-bg-color: #fff;
+}
+
+footer {
+    --footer-text-color: #fff;
+    --fuuter-bg-color: #000;
+}
