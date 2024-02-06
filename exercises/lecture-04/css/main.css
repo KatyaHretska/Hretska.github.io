@@ -26,15 +26,15 @@ section > p {
 }
 /* Чи зміниться колір тексту p всередині елемента div? Ні, р всередині не є прямим нащадком секції */
 
-section > p, div > p {
+section p {
     font-size: xx-large;
 }
 
-.heading-color > h2 {
+.heading-color + h2 {
     color: indigo;
 }
 
-p.first > a, span > a {
+p.first a {
     color: green;
 }
 
@@ -42,7 +42,7 @@ p .first a {
     color: green;
 }
 
-.paragraf > p {
+.paragraf ~ p {
     color: salmon;
 }
 
@@ -151,7 +151,7 @@ p .first a {
 }
 
 .translucent-box {
-    background: hsl(0deg, 100%, 50%);
+    background: hsl(0deg, 100%, 75%);
 }
 
 html {
