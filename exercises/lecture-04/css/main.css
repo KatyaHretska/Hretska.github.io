@@ -151,7 +151,7 @@ p .first a {
 }
 
 .translucent-box {
-    background: hsl(0deg, 100%, 75%);
+    background: hsl(0deg 100% 50% / 0.5);
 }
 
 html {
