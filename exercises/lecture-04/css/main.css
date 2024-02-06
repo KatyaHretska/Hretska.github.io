@@ -1,0 +1,166 @@
+h1, h2, h3 {
+    /* color: rgba(54, 59, 60, 1); */
+    /* color: rgb(54 59 60 / 1); */
+    /* color: hsl(0, 1%, 26%); */
+    color: grey;
+}
+
+#main {
+   color: #e60202; 
+}
+
+.h2 {
+    color: red;
+}
+
+.heading {
+    color: rgb(0, 255, 0);
+}
+
+ul > li {
+    font-weight: bold;
+}
+
+section > p {
+    color: red;
+}
+/* Чи зміниться колір тексту p всередині елемента div? Ні, р всередині не є прямим нащадком секції */
+
+section > p, div > p {
+    font-size: xx-large;
+}
+
+.heading-color > h2 {
+    color: indigo;
+}
+
+p.first > a, span > a {
+    color: green;
+}
+
+p .first a {
+    color: green;
+}
+
+.paragraf > p {
+    color: salmon;
+}
+
+.black1{
+    color: #000000;
+}
+
+.blue1 {
+    color: #0000ff;
+}
+
+.green1 {
+    color: #00ff00;
+}
+
+.red1 {
+    color: #ff0000;
+}
+
+.white1 {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.yellow1 {
+    color: #d9ff00;
+    background-color: #000000;
+}
+
+.black2 {
+    color: rgb(0, 0, 0);
+}
+
+.blue2 {
+    color: rgb(0, 0, 225);
+}
+
+.green2 {
+    color: rgb(0, 225, 0);
+}
+
+.red2 {
+    color: rgb(225, 0, 0);
+}
+
+.white2 {
+    color: rgb(225, 225, 225);
+    background-color: #000000;
+}
+
+.yellow2 {
+    color: rgb(234, 255, 0);
+    background-color: #000000;
+}
+
+.black3 {
+    color: hsl(0, 0%, 0%);
+}
+
+.blue3 {
+    color: hsl(240, 100%, 50%);
+}
+
+.green3 {
+    color: hsl(120, 100%, 50%);
+}
+
+.red3 {
+    color: hsl(0, 100%, 50%);
+}
+
+.white3 {
+    color: hsl(0, 0%, 100%);
+    background-color: #000000;
+}
+
+.yellow3 {
+    color: hsl(58, 98%, 50%);
+    background-color: #000000;
+}
+
+.black4 {
+    color: rgba(0, 0, 0, 1);
+}
+
+.blue4 {
+    color: rgba(0, 0, 255, 1);
+}
+
+.green4 {
+    color: rgb(0 225 0 / 1);
+}
+
+.red4 {
+    color: rgb(225 0 0 / 1);
+}
+
+.white4 {
+    color: rgb(225 225 225 / 1);
+    background-color: #000000;
+}
+
+.yellow4 {
+    color: rgb(234 255 0 / 1);
+    background-color: #000000;
+}
+
+.translucent-box {
+    background: hsl(0deg, 100%, 50%);
+}
+
+html {
+    font-size: 100%;
+    > body {
+        font-size: 1.4em;
+    }
+    > h1 {
+        font-size: 2.4em;
+    }
+
+}
