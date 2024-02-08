@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --primary-font-family: 'Roboto', sans-serif;
+    --primary-font-size: 0.875rem;
+}
 
 html {
     --primary-text-color: #000;
@@ -11,4 +15,8 @@ html {
 footer {
     --footer-text-color: #fff;
     --fuuter-bg-color: #000;
+}
+
+a { 
+    text-decoration: none;
 }
