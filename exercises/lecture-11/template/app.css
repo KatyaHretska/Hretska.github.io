@@ -1,0 +1,18 @@
+.grid {
+  --min: 30ch;
+
+  display: grid;
+  
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min-width , max-widht));
+}
+
+body {
+  --padding: 5vw;
+  --max-width: 180ch;
+}
+
+.card {
+  min-width: fit-content(100%) fit-content(var(--min)); 
+  max-width: fit-content(min-widht) 1fr; 
+}
