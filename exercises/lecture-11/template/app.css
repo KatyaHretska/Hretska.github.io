@@ -4,7 +4,7 @@
   display: grid;
   
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(min-width , max-widht));
+  grid-template-columns: repeat(auto-fit, minmax(var(--min), 1fr));
 }
 
 body {
@@ -13,6 +13,5 @@ body {
 }
 
 .card {
-  min-width: fit-content(100%) fit-content(var(--min)); 
-  max-width: fit-content(min-widht) 1fr; 
+  min-width: 100%; 
 }
