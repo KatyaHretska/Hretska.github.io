@@ -64,10 +64,44 @@ nav {
   grid-column: 3 / 4;
 }
 
-.toolbar a{
+.toolbar a {
   margin-left: .5em;
 }
 
 .navbar a {
   margin-left: 1em;
+}
+
+@media (max-width: 800px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'header content';
+  }
+  header {
+    grid-area: header;
+    display: grid;
+    grid-template-areas: 
+    'logo'
+    'toolbar'
+    'navbar';
+  }
+  .logo {
+    grid-area: logo;
+  }
+  .navbar {
+    display: grid;
+    grid-area: navbar;
+  }
+  .toolbar {
+    display: grid;
+    grid-area: toolbar;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .content {
+    grid-area: content;
+  }
+
 }

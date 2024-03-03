@@ -9,6 +9,8 @@
 @import url("breadcrumb.css");
 @import url("contact.css");
 @import url("blog.css");
+@import url("cart.css");
+
 
 /* body { 
     color: var(--primary-text-color);
