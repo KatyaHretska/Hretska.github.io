@@ -8,24 +8,39 @@ table {
     margin:3rem auto;
 }
 
+tr:nth-of-type(odd) {
+    background-color: lightgray;
+}
 
 th { 
+    background-color: indigo;
+    color: #fff;
+    font-weight: bold;
 } 
 
 td, th { 
-    
+    padding: 0.625rem;
+    border: 1px solid lightgray;
+    text-align: left;
+    font-size: 1.125rem;
 }
 
 @media (max-width: 50rem) {
     table, thead, tbody, th, td, tr { 
+        display: block;
     }
        
     thead tr { 
+        display: none;
     }
       
-    tr {}
+    tr {
+        border: 1px solid darkgray;
+    }
       
     td { 
+        border: none;
+        border-bottom: 1px solid lightgray;
 
     } 
 }

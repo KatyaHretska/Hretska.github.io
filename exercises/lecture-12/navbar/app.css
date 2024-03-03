@@ -81,8 +81,13 @@ nav {
     'header content';
   }
   header {
+    width: 100%;
+    max-width: 10rem;
+    height: 100%;
     grid-area: header;
     display: grid;
+    align-content: flex-start;
+    text-align: center;
     grid-template-areas: 
     'logo'
     'toolbar'
