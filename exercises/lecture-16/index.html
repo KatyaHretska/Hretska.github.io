@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="../../favicon_io/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <h1>Hello, javascript!</h1>
+
+    <script>
+      // 1
+      let message1 = "Hello";
+      let message2 = "JavaScript";
+      alert(message1 + ", " + message2 + "!");
+
+      // 2
+      ("use strict");
+      let message3 = "hello";
+      let message4 = 123456;
+
+      //3
+      let x = +prompt("Введи будь-яке значення х ?");
+      let y = +prompt("Введи будь-яке значення y ?");
+      let z = x + y;
+      console.log(z);
+
+      //4
+      ("use strict");
+      let a = Number(9007199254740991);
+      let b = Number(9007199254740991n);
+      console.log(a + b);
+      // Uncaught TypeError: can't convert BigInt to number
+
+      //5
+      ("use strict");
+      let apples = 2;
+      let oranges = 3;
+      alert(apples + oranges);
+
+      //6
+      let a1 = 1,
+        b1 = 1;
+      let c = ++a1; // 2
+      let d = b1++; // 1
+      console.log(
+        "a1 = " + a1 + "," + "b1 = " + b1 + "c = " + c + "," + "d = " + d
+      );
+
+      //7
+      ("use strict");
+      let a7 = 2;
+      let x7 = 1 + (a7 *= 2);
+      console.log(a7); //4
+      console.log(x7); //5
+
+      //8
+      console.log("" + 1 + 0); //10
+      console.log("" - 1 + 0); //-1
+      console.log(true + false); //1+0=1
+      console.log(6 / "3"); //2
+      console.log("2" * "3"); //6
+      console.log(4 + 5 + "px"); //9px
+      console.log("$" + 4 + 5);
+      $45;
+      console.log("4" - 2); //2
+      console.log("4px" - 2); //NaN
+      console.log("  -9  " + 5); //-9 5
+      console.log("  -9  " - 5); //-14
+      console.log(null + 1); //1
+      console.log(undefined + 1); // NaN
+      console.log(NaN + 1); //NaN
+
+      //9
+      ("use strict");
+      // скоротити цей код за допомогою операторів += і *=:
+      let n = 2;
+      n = n + 5; // n += 5
+      n = n * 2; //n *= 2
+
+      //10
+      let n1 = +"   123   ";
+      let n2 = parseFloat("123z");
+      let n3 = +true;
+      let n4 = +false;
+
+      console.log(n1, n2, n3, n4);
+      // Перетворити змінні n1, n2, n3, n4 на числа
+    </script>
+  </body>
+</html>
