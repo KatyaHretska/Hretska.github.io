@@ -35,15 +35,15 @@
 
       //5
       ("use strict");
-      let apples = 2;
-      let oranges = 3;
-      alert(apples + oranges);
+      let apples = "2";
+      let oranges = "3";
+      alert(+apples + +oranges);
 
       //6
       let a1 = 1,
         b1 = 1;
-      let c = ++a1; // 2
-      let d = b1++; // 1
+      let c = ++a1; // c=a1=a1+1=1+1=2
+      let d = b1++; // d=b1=1 b1=b1+1=1+1=2
       console.log(
         "a1 = " + a1 + "," + "b1 = " + b1 + "c = " + c + "," + "d = " + d
       );
