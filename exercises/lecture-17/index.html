@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1
+      /*let x = 3;
+      let y = 4;
+
+      x == 3; //true
+      x === "3"; //false
+      x != 5; //true
+      x !== "5"; //true
+      X !== 3; //велику Х не визначали, буде помилка
+      y > 5; //false
+      y >= 3; //true
+      y < 5; //true
+      y <= 2; //false
+      1 == true; //true
+      null == undefined; //true
+      NaN == NaN; //false */
+
+      //2
+      /*let x = 3;
+      let y = 4;
+      let z = 5;
+
+      x ||= y; //4
+      x || (y = z); //4
+      x &&= y; //5
+      x && (y = z); //5
+      x ??= y; //4
+      x ?? (y = z); //4 */
+
+      //3
+      let num = +prompt("Вгадай число?");
+      if (num == 3) {
+        alert("Congratulations, You did it!");
+      } else if (num > 3) {
+        alert("The number is too long");
+      } else if (num < 3) {
+        alert("The number is short");
+      }
+
+      //4.1
+      let day = prompt("Введи день тижня?");
+      if (day == "Monday" || day == "Понеділок") {
+        alert("Start of the work week!");
+      } else if (day == "Friday" || day == "П'ятниця") {
+        alert("End of the work week!");
+      } else {
+        alert("A regular day..");
+      }
+
+      //4.2
+      switch (prompt("Введи день тижня?")) {
+        case "Monday":
+        case "Понеділок":
+          alert("Start of the work week!");
+          break;
+        case "Friday":
+        case "П'ятниця":
+          alert("End of the work week!");
+          break;
+        default:
+          alert("A regular day..");
+      }
+
+      //5.1
+      let score1 = +prompt("Кількість набраних балів?");
+      if (score1 < 50) {
+        alert("Grade F");
+      } else if (score1 < 70 && score1 >= 50) {
+        alert("Grade D");
+      } else if (score1 < 80 && score1 >= 70) {
+        alert("Grade C");
+      } else if (score1 < 90 && score1 >= 80) {
+        alert("Grade B");
+      } else alert("Grade A");
+
+      //5.2
+      let score = +prompt("Кількість набраних балів?");
+      console.log(
+        "Grade " +
+          (score < 50
+            ? "F"
+            : score < 70 && score >= 50
+            ? "D"
+            : score < 80 && score >= 70
+            ? "C"
+            : score < 90 && score >= 80
+            ? "B"
+            : "A")
+      );
+
+      //6
+      let firstName = null;
+      let lastName = undefined;
+      let username = (firstName || lastName) ?? "Guest";
+
+      console.log(username); // "Guest"
+    </script>
+  </body>
+</html>
