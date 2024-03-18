@@ -72,16 +72,23 @@
         };
         console.log(pow(x, n));
       }
-      console.log(pow(3, 2));
-      console.log(pow(3, 3));
-      console.log(pow(1, 100));
 
       //6
 
-      let ask = (question, yes, no) => {
+      const ask = (question, yes, no) => {
         if (confirm(question)) yes();
         else no();
       };
+
+      const yesfunction = () => {
+        alert("Погоджено");
+      };
+
+      const nofunction = () => {
+        alert("Відмовлено");
+      };
+
+      ask("Ви погоджуєте питання?", yesfunction, nofunction);
 
       //7
 
@@ -89,6 +96,16 @@
         if (confirm(question)) yes();
         else no();
       };
+
+      ask1(
+        "Ви погоджуєте питання?",
+        function () {
+          alert("Погоджено");
+        },
+        function () {
+          alert("Відмовлено");
+        }
+      );
 
       //8
 
@@ -105,10 +122,8 @@
         return "foo";
       }
 
-      A();
-      console.log(C());
-      B();
-      console.log(C());
+      console.log(A() ?? C());
+      console.log(B() || C());
     </script>
   </body>
 </html>
